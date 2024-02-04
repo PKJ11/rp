@@ -22,16 +22,15 @@ const FirstPages = () => {
       setPlaying(false);
       setShowSecondGif(true);
       setShowSong(true);
-
+      setTimeout(() => {
+        navigate('/LovePage2');
+      }, 62000);
       // Show the third gif after 6 seconds (total 70 seconds)
       setTimeout(() => {
         setShowSecondGif(false);
         setShowThirdGif(true);
         // Start playing the song after 64 seconds
-        setTimeout(() => {
-          navigate('/LovePage2');
-        }, 77000);
-      }, 6000);
+      }, 20000);
     }
   };
 
